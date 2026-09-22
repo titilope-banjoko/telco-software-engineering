@@ -115,9 +115,9 @@
         //{
         //    string name = askForUserName();
 
-        //    Console.WriteLine("Hello " + name);
+        //    Console.WriteLine("Hello " + name)
 
-        //    Console.ReadLine();
+        //    Console.ReadLine()
         //}
 
         //static string askForUserName()
