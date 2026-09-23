@@ -608,39 +608,84 @@
 
 
         // Exception handling (try/catch)
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("*** Welcome to the number divider!");
+
+        //    try
+        //    {
+        //        Console.WriteLine("Enter your first number: ");
+        //        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        //        Console.WriteLine("Enter your second number: ");
+        //        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        //        int result = num1 / num2;
+
+        //        Console.WriteLine("The result is: " + result);
+        //    }
+        //    catch (FormatException e)
+        //    {
+        //        Console.WriteLine("Please learn to read properly");
+        //    }
+        //    catch (DivideByZeroException e)
+        //    {
+        //        Console.WriteLine("Hey buddy! You cannot divide by zero!");
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        Console.WriteLine("An error has occured! " + e.Message);
+        //    }
+        //    finally
+        //    {
+        //        Console.WriteLine("Thank you for using our prgram!");
+        //    }
+
+
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+        // 2D, 3D Dimensional Array
+        //static void Main(string[] args)
+        //{
+        //    // 2D
+        //    // 1, 2, 3
+        //    // 4, 5, 6
+        //    // 7, 8, 9
+
+        //    // Define some cool numbers
+        //    //int[,] num = new int[,] { {1, 2, 3},{4, 5, 6}, {7, 8, 9} };
+
+        //    // 3D
+        //    // 1, 2
+        //    // 4, 5
+
+        //    int[,,] num = new int[,,] { { { 1, 2 }, { 1, 2 } }, { { 1, 2}, { 1, 2} } };
+
+        //    Console.WriteLine("The first number in the array is: " + num[0, 0, 0]);
+
+        
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+
+        // Lists
         static void Main(string[] args)
         {
-            Console.WriteLine("*** Welcome to the number divider!");
+            // Define some cool numbers
+            int[] numbers = new int[] { 4649, 3, 67, 248, 1, 67, 546, 33, 236, 98, 12, 6543 };
 
-            try
-            {
-                Console.WriteLine("Enter your first number: ");
-                int num1 = Convert.ToInt32(Console.ReadLine());
+            List<int> list = new List<int>(numbers);
 
-                Console.WriteLine("Enter your second number: ");
-                int num2 = Convert.ToInt32(Console.ReadLine());
+            list.Sort();
 
-                int result = num1 / num2;
-
-                Console.WriteLine("The result is: " + result);
-            }
-            catch (FormatException e)
+            // Output each number to the screen
+            foreach (int num in list)
             {
-                Console.WriteLine("Please learn to read properly");
+                Console.WriteLine(num);
             }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine("Hey buddy! You cannot divide by zero!");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("An error has occured! " + e.Message);
-            }
-            finally
-            {
-                Console.WriteLine("Thank you for using our prgram!");
-            }
-
 
             // Keep the CLI open!
             Console.ReadLine();
