@@ -681,7 +681,7 @@
 
             list.Sort();
 
-            // Output each number to the screen
+            // Output each number to the screen;
             foreach (int num in list)
             {
                 Console.WriteLine(num);
