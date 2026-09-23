@@ -427,31 +427,145 @@
 
 
         // 5.0 Arrays - This is a collection of some things
+        //static void Main(string[] args)
+        //{
+        //    //int num1 = 5;
+        //    //int num2 = 3;
+        //    //int num3 = 8;
+        //    //int num4 = 13;
+        //    //int num5 = 9;
+        //    //int num6 = 4;
+
+        //    // Rewriting above in an array
+        //    //int[] numbers = new int[] { 5, 3, 8, 13, 9, 4 };
+        //    //string[] names = new string[] { "titilope", "ayodeji", "banjoko" };
+
+        //    int[] numbers = new int[5];
+        //    numbers[0] = 2;
+
+        //    string[] names = new string[5];
+        //    names[0] = "Titilpe";
+
+        //    // How to access the values
+        //    Console.WriteLine(numbers[0]);
+        //    Console.WriteLine(names[0]);
+
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+
+        // While loop
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Welcome to the number counter!");
+
+        //    Console.WriteLine("Enter a number between 1 and 100:");
+        //    int number = Convert.ToInt32(Console.ReadLine());
+
+        //    int counter = 1;
+
+        //    while (counter <= number)
+        //    {
+        //        Console.WriteLine(counter);
+        //        counter++;
+        //    }
+
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+        // Do while loop
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Welcome to the number counter!");
+
+        //    Console.WriteLine("Enter a number between 1 and 100:");
+        //    int number = Convert.ToInt32(Console.ReadLine());
+
+        //    int counter = 1;
+
+        //    do
+        //    {
+        //        Console.WriteLine(counter);
+        //        counter++;
+        //    }
+        //    while (counter <= number);
+
+
+        //     // Keep the CLI open!
+        //     Console.ReadLine();
+        //}
+
+
+        // For loop
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Welcome to the number counter!");
+
+        //    Console.WriteLine("Enter a number between 1 and 100:");
+        //    int number = Convert.ToInt32(Console.ReadLine());
+
+        //    //int counter = 1;
+
+        //    //do
+        //    //{
+        //    //    Console.WriteLine(counter);
+        //    //    counter++;
+        //    //}
+        //    //while (counter <= number);
+            
+        //    for (int counter1 = 1; counter1 <= number; counter1++ ) // or counter = counter + 2 instead of counter++)
+        //    {
+        //        Console.WriteLine(counter1);
+        //    }
+        //    // For loop is used when we know the number of times the block will iterate
+        //    // While loop is used when we dont know the number of iterations.
+
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+        // For each loop
+        // For loop
+        //static void Main(string[] args)
+        //{
+        //    // Define am array
+        //    int[] numbers = new int[] { 1, 4, 9, 12, 34, 44, 56, 78, 89, 92, 99 };
+
+        //    // output each number to the screen using a FOR loop!
+        //    for(int num = 0; num < numbers.Length; num++)
+        //    {
+        //        Console.WriteLine(numbers[num]);
+        //    }
+
+        //    foreach (int num in numbers)
+        //    {
+        //        Console.WriteLine(num);
+        //    }
+
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+        // Exercise 3 - Draw a cube
         static void Main(string[] args)
         {
-            //int num1 = 5;
-            //int num2 = 3;
-            //int num3 = 8;
-            //int num4 = 13;
-            //int num5 = 9;
-            //int num6 = 4;
+            Console.WriteLine("Enter a number and I will draw a cube for the size of your number");
+            int num = Convert.ToInt32(Console.ReadLine());
 
-            // Rewriting above in an array
-            //int[] numbers = new int[] { 5, 3, 8, 13, 9, 4 };
-            //string[] names = new string[] { "titilope", "ayodeji", "banjoko" };
-
-            int[] numbers = new int[5];
-            numbers[0] = 2;
-
-            string[] names = new string[5];
-            names[0] = "Titilpe";
-
-            // How to access the values
-            Console.WriteLine(numbers[0]);
-            Console.WriteLine(names[0]);
+            for (int y = 0; y < num; y++)
+            {
+                for(int x = 0; x < num; x++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("*");
+            }
 
             // Keep the CLI open!
             Console.ReadLine();
         }
+
     }
 }
