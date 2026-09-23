@@ -549,23 +549,101 @@
         //}
 
         // Exercise 3 - Draw a cube
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Enter a number and I will draw a cube for the size of your number");
+        //    int num = Convert.ToInt32(Console.ReadLine());
+
+        //    for (int y = 0; y < num; y++)
+        //    {
+        //        for(int x = 0; x < num; x++)
+        //        {
+        //            Console.Write("*");
+        //        }
+        //        Console.WriteLine("*");
+        //    }
+
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+
+        // Break statement
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Enter a number and I will count up to your number");
+        //    int num = Convert.ToInt32(Console.ReadLine());
+
+        //    int counter = 1;
+
+        //    while (true)
+        //    {
+        //        if (counter > num) break;
+
+        //        Console.WriteLine(counter);
+        //        counter++;
+        //    }
+
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+
+        // Continue statement
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine("Enter a number and I will skip your number when counting to 10!");
+        //    int num = Convert.ToInt32(Console.ReadLine());
+
+        //    for(int c = 0; c <= 10; c++)
+        //    {
+        //        if (c == num) continue;
+
+        //        Console.WriteLine(c);
+        //    }
+
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
+
+
+        // Exception handling (try/catch)
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a number and I will draw a cube for the size of your number");
-            int num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("*** Welcome to the number divider!");
 
-            for (int y = 0; y < num; y++)
+            try
             {
-                for(int x = 0; x < num; x++)
-                {
-                    Console.Write("*");
-                }
-                Console.WriteLine("*");
+                Console.WriteLine("Enter your first number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Enter your second number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                int result = num1 / num2;
+
+                Console.WriteLine("The result is: " + result);
             }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Please learn to read properly");
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("Hey buddy! You cannot divide by zero!");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("An error has occured! " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Thank you for using our prgram!");
+            }
+
 
             // Keep the CLI open!
             Console.ReadLine();
         }
-
     }
 }
