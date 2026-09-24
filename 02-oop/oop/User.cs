@@ -29,5 +29,11 @@ namespace oop
         //{
 
         //}
+
+        // Object method
+        internal bool isRetired()
+        {
+            return (age >= 66);
+        }
     }
 }
