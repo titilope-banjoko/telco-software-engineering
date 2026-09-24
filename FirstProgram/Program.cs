@@ -408,7 +408,7 @@
         //    string answer = Console.ReadLine();
 
         //    //string message;
-        
+
         //    //if (answer == "yes")
         //    //    message = "I knew I could count on you!";
         //    //else
@@ -514,7 +514,7 @@
         //    //    counter++;
         //    //}
         //    //while (counter <= number);
-            
+
         //    for (int counter1 = 1; counter1 <= number; counter1++ ) // or counter = counter + 2 instead of counter++)
         //    {
         //        Console.WriteLine(counter1);
@@ -607,44 +607,44 @@
         //}
 
 
-        // Exception handling (try/catch)
-        //static void Main(string[] args)
-        //{
-        //    Console.WriteLine("*** Welcome to the number divider!");
+        // Exception handling (try/catch/finally)
+        static void Main(string[] args)
+        {
+            Console.WriteLine("*** Welcome to the number divider!");
 
-        //    try
-        //    {
-        //        Console.WriteLine("Enter your first number: ");
-        //        int num1 = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Enter your first number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
 
-        //        Console.WriteLine("Enter your second number: ");
-        //        int num2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter your second number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
 
-        //        int result = num1 / num2;
+                int result = num1 / num2;
 
-        //        Console.WriteLine("The result is: " + result);
-        //    }
-        //    catch (FormatException e)
-        //    {
-        //        Console.WriteLine("Please learn to read properly");
-        //    }
-        //    catch (DivideByZeroException e)
-        //    {
-        //        Console.WriteLine("Hey buddy! You cannot divide by zero!");
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine("An error has occured! " + e.Message);
-        //    }
-        //    finally
-        //    {
-        //        Console.WriteLine("Thank you for using our prgram!");
-        //    }
+                Console.WriteLine("The result is: " + result);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Please learn to read properly");
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("Hey buddy! You cannot divide by zero!");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("An error has occured! " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Thank you for using our prgram!");
+            }
 
 
-        //    // Keep the CLI open!
-        //    Console.ReadLine();
-        //}
+            // Keep the CLI open!
+            Console.ReadLine();
+        }
 
         // 2D, 3D Dimensional Array
         //static void Main(string[] args)
@@ -665,30 +665,30 @@
 
         //    Console.WriteLine("The first number in the array is: " + num[0, 0, 0]);
 
-        
+
         //    // Keep the CLI open!
         //    Console.ReadLine();
         //}
 
 
         // Lists
-        static void Main(string[] args)
-        {
-            // Define some cool numbers
-            int[] numbers = new int[] { 4649, 3, 67, 248, 1, 67, 546, 33, 236, 98, 12, 6543 };
+        //static void Main(string[] args)
+        //{
+        //    // Define some cool numbers
+        //    int[] numbers = new int[] { 4649, 3, 67, 248, 1, 67, 546, 33, 236, 98, 12, 6543 };
 
-            List<int> list = new List<int>(numbers);
+        //    List<int> list = new List<int>(numbers);
 
-            list.Sort();
+        //    list.Sort();
 
-            // Output each number to the screen;
-            foreach (int num in list)
-            {
-                Console.WriteLine(num);
-            }
+        //    // Output each number to the screen;
+        //    foreach (int num in list)
+        //    {
+        //        Console.WriteLine(num);
+        //    }
 
-            // Keep the CLI open!
-            Console.ReadLine();
-        }
+        //    // Keep the CLI open!
+        //    Console.ReadLine();
+        //}
     }
 }
